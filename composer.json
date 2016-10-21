@@ -1,5 +1,5 @@
 {
-  "name": "cleentfaar/tissue-bundle",
+  "name": "bubnov/tissue-bundle",
   "description": "A Symfony bundle that let's you scan your files for viruses using the Tissue library",
   "keywords": ["anti-virus", "security", "tissue", "virus", "clamav"],
   "type": "symfony-bundle",
