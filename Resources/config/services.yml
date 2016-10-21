@@ -6,18 +6,18 @@ parameters:
 
 services:
   cl_tissue.adapter_registry:
-    class: %cl_tissue.adapter_registry.class%
+    class: "%cl_tissue.adapter_registry.class%"
 
   cl_tissue.scanner:
-    class: %cl_tissue.adapter.mock.class%
+    class: "%cl_tissue.adapter.mock.class%"
     factory_service: cl_tissue.adapter_registry
     factory_method: get
     arguments:
-      - %cl_tissue.adapter.alias%
+      - "%cl_tissue.adapter.alias%"
 
   cl_tissue.validator.clean_file:
-    class: %cl_tissue.validator.clean_file.class%
+    class: "%cl_tissue.validator.clean_file.class%"
     arguments:
-      - @cl_tissue.scanner
+      - "@cl_tissue.scanner"
     tags:
       - { name: validator.constraint_validator, alias: clean_file }
