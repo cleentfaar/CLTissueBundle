@@ -117,10 +117,10 @@ class Configuration implements ConfigurationInterface
                     'bin'      => '/usr/bin/clamdscan',
                     'database' => null,
                 ]);
-                $resolver->setAllowedTypes([
-                    'bin'      => ['string'],
-                    'database' => ['string', 'null'],
-                ]);
+                $resolver
+                    ->setAllowedTypes('bin', ['string'])
+                    ->setAllowedTypes('database', ['string', 'null'])
+                ;
                 break;
             default:
                 break;
