@@ -13,9 +13,9 @@
   ],
   "require": {
     "php": ">=5.4",
-    "symfony/framework-bundle": "~2.3|~3.0",
-    "symfony/options-resolver": "~2.3|~3.0",
-    "symfony/validator": "~2.3|~3.0",
+    "symfony/framework-bundle": "~3.0",
+    "symfony/options-resolver": "~3.0",
+    "symfony/validator": "~3.0",
     "bubnov/tissue": "~1.0"
   },
   "suggests": {
