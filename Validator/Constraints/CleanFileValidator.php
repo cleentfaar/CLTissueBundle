@@ -55,7 +55,7 @@ class CleanFileValidator extends FileValidator
                 unlink($path);
             }
 
-            $this->buildViolation($constraint->virusDetectedMessage)->addViolation();
+            $this->context->buildViolation($constraint->virusDetectedMessage)->addViolation();
 
             return;
         }
