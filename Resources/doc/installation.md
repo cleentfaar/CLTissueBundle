@@ -13,7 +13,7 @@ Add the following to your ``composer.json`` (see http://getcomposer.org/)
 
 ```json
     "require" :  {
-        "cleentfaar/tissue-bundle": "~0.1",
+        "cleentfaar/tissue-bundle": "~1.0",
     }
 ```
 
