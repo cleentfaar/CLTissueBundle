@@ -1,13 +1,13 @@
 # TissueBundle [![License](https://poser.pugx.org/cleentfaar/tissue-bundle/license.svg)](https://packagist.org/packages/cleentfaar/tissue-bundle)
 
-A Symfony 3 bundle that can scan your files for viruses using the [Tissue](https://github.com/bubnovKelnik/tissue) library
+A Symfony 3 bundle that can scan your files for viruses using the [Tissue](https://github.com/bubnov-mikhail/tissue) library
 and adapters. Uses the `ClamAV` engine by default.
 
 ### Features
 
 - Scan uploaded files during validation (using the `CleanFile` constraint).
 - Scan files during a batch process (simply using the `cl_tissue.scanner`-service).
-- Uses the [Tissue](https://github.com/bubnovKelnik/tissue) library and it's `ClamAV` adapter, but you can use your own
+- Uses the [Tissue](https://github.com/bubnov-mikhail/tissue) library and it's `ClamAV` adapter, but you can use your own
 virus-scanning engine by adding your own adapter service and tagging it with `cl_tissue.adapter`
 (check out the [installation documentation](Resources/doc/installation.md) for more information).
 
